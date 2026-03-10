@@ -4,7 +4,7 @@ const fruitNutrition = document.querySelector("#nutritionSection p");
 
 let cal = 0;
 const fruitCal = {};
-const apiKey = "API KEY HERE";
+const apiKey = "54810753-c970ae0e97a375af20d3dff02";
 
 fruitForm.addEventListener("submit", extractFruit);
 
@@ -18,7 +18,7 @@ async function fetchFruitData(fruit) {
   try {
     //Make sure to replace this link with your deployed API URL in this fetch
     const respData = await fetch(
-      `https://fruit-api-5v0j.onrender.com/fruits/${fruit}`,
+      `https://fruit-api-uf41.onrender.com/fruits/${fruit}`,
     );
     const respImg = await fetch(
       `https://pixabay.com/api/?q=${fruit}+fruit&key=${apiKey}`,
